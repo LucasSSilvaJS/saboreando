@@ -1,0 +1,16 @@
+.banner{
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.banner-wrapper{
+    padding-top: 96px;
+    background-color: var(--cor--secundaria);
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-with-banner{
+    position: relative;
+}

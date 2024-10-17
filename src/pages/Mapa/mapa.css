@@ -1,0 +1,45 @@
+.search-map{
+    border-radius: 20px;
+    padding: 20px;
+    padding-right: 40px;
+    outline: none;
+    font-family: Urbanist;
+    border: 0;
+    box-shadow: 0 2px 4px var(--cor--preto);
+    background-color: var(--cor--input);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.search-map::placeholder{
+    color: var(--cor--placeholder);
+}
+
+.input-wrapper-search{
+    margin: 0 auto;
+    position: absolute;
+    height: 45px;
+    width: 80%;
+    z-index: 999;
+    top: 20px;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.input-wrapper-search svg{
+    color: var(--cor--placeholder);
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    z-index: 1;
+}
+
+
+.map-location-display{
+    position: relative;
+    width: 100%;
+    height: calc(100dvh - 96px - 74px);
+}

@@ -1,0 +1,38 @@
+.category-resume{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 256px;
+    border-radius: 18px;
+    text-align: center;
+    margin: 10px auto 40px auto;
+    color: var(--cor--branco);
+    font-family: Urbanist;
+    position: relative;
+}
+
+.resume-content{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.resume-content h3{
+    font-size: 22px;
+}
+
+.resume-content p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.category-resume::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+}

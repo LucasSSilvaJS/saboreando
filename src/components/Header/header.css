@@ -1,0 +1,50 @@
+.header-container{
+    background-color: var(--cor--primaria);
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    padding: 15px;
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-header-logo{
+    width: 40px;
+    height: 40px;
+}
+
+.brand-header-name{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--cor--bg);
+}
+
+.header-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor--bg);
+    gap: 5px;
+}
+
+.header-state{
+    font-family: Urbanist;
+    font-size: 16px;
+}
+
+.header-page{
+    text-align: center;
+    font-family: Urbanist;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--cor--bg);
+}

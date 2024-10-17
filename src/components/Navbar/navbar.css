@@ -1,0 +1,45 @@
+.nav-spacing{
+    height: 74px;
+}
+
+.navbar{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cor--branco);
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item{
+    width: 20%;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: Urbanist;
+    color: var(--cor--placeholder);
+    padding: 10px;
+}
+
+.nav-item span{
+    font-size: 12px;
+}
+
+.nav-item svg{
+    width: 30px;
+    height: 30px;
+}
+
+.nav-item-active{
+    color: var(--cor--press--botao);
+    border-top: 4px solid var(--cor--press--botao);
+}

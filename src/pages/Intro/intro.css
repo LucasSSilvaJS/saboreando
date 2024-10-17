@@ -1,0 +1,5 @@
+.container-intro{
+    background-color: var(--cor--primaria);
+    min-height: 100dvh;
+    position: relative;
+}

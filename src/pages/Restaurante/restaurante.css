@@ -1,0 +1,80 @@
+.stamp-collection{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 27px;
+}
+
+.about-restaurant{
+    margin: 18px 0;
+    font-family: Urbanist;    
+    font-weight: 600;
+}
+
+.about-restaurant h2{
+    font-size: 18px;
+    color: var(--cor--erro);
+    margin-bottom: 10px;
+}
+
+.about-restaurant p{
+    font-size: 14px;
+}
+
+.label-restaurant{
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+
+.map-section{
+    padding: 20px 2%;
+    font-family: Urbanist;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.map-info{
+    margin-bottom: 10px;
+}
+
+.map-info h2{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.map-adress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.map-location{
+    border: 0;
+    width: 100%;
+    border-radius: 0 50px 0 0;
+    height: 408px;
+}
+
+.business-hours{
+    margin: 0 auto;
+    font-family: Urbanist;
+    padding: 40px 2%;
+    width: 80%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.business-hours h2{
+    text-align: center;
+}
+
+.business-hours ul{
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: center;
+}

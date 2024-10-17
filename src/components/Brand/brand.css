@@ -1,0 +1,22 @@
+.brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brand-name{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--cor--bg);
+}
+
+.brand-logo{
+    width: 200px;
+    height: 200px;
+}

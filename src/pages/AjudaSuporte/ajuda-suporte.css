@@ -1,0 +1,20 @@
+.suport-options{
+    font-family: Urbanist;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.suport-option{
+    color: var(--cor--preto);
+}
+
+.suport-option h2{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.suport-option span{
+    font-size: 12px;
+}

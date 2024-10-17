@@ -1,0 +1,21 @@
+.development{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor--branco);
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.development_by{
+    font-family: 'Urbanist';
+    font-size: 14px;
+}
+
+.development_team{
+    font-family: 'Megrim';
+    font-weight: 600;
+}

@@ -1,0 +1,21 @@
+.button{
+    width: 100%;
+    border-radius: 12px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: var(--primary-red-500);
+    color: var(--cor--branco);
+    font-family: Urbanist;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--cor--hover--botao);
+}
+.button:active{
+    background-color: var(--cor--press--botao);
+}

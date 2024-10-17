@@ -1,0 +1,31 @@
+.perfil{
+    position: relative;
+    height: calc(100dvh - 96px - 74px);
+    font-family: Urbanist;
+}
+
+.perfil-options, .perfil-terms{
+    padding: 20px;
+}
+
+.perfil-options a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--cor--erro);
+}
+
+.perfil-terms{
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.perfil-terms a{
+    text-decoration: none;
+    color: var(--cor--erro);
+    font-weight: 600;
+}

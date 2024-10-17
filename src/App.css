@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --cor--primaria: #A60402;
+  --cor--secundaria: #DFC4A2;
+  --cor--input:#F0E4D4;
+  --cor--placeholder: #A9A197;
+  --cor--bg:#F7F1E8;
+  --cor--hover--botao: #970402;
+  --cor--press--botao: #760301;
+  --cor--confirmacao: #008124;
+  --cor--erro: #8c2e0e;
+  --cor--info: #0077a9;
+  --cor--aviso: ##e8d000;
+  --cor--preto:black;
+  --cor--branco:white;
+  --primary-red-500: #a60402;
+  --primary-red-600: #970402;
+  --primary-red-700: #760301;
+  --prymary-sand-400: #e5d0b5;
+  --prymary-sand-500: #dfc4a2;
+  --prymary-sand-600: #cbb293;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body{
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  background-image: url('./assets/img/bg.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.default-container{
+  min-height: 100dvh;
+}
+
+.container-bg{
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--cor--bg);
+}
+
+.container-invite{
+  max-width: 400px;
+  margin: 0 auto;
+  background-image: url(./assets/img/bg-invite.png);
+  background-position: top;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}
+
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(194, 37, 37, 0.5);
 }
