@@ -17,22 +17,36 @@ L.Icon.Default.mergeOptions({
 const MapComponent = ({ address }) => {
     const [markerPosition, setMarkerPosition] = useState([0, 0]); // Posição inicial
     const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchCoordinates = async () => {
+            if (!address) return; // Verifica se o endereço é válido
+
             setLoading(true);
-            const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json`);
-            const data = await response.json();
-            if (data.length > 0) {
-                const { lat, lon } = data[0];
-                setMarkerPosition([lat, lon]);
-            } else {
-                console.error('Endereço não encontrado');
+            setError(null); // Reseta o erro antes da nova requisição
+            
+            try {
+                const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(address)}&format=json`);
+                if (!response.ok) throw new Error('Erro na requisição');
+
+                const data = await response.json();
+                if (data.length > 0) {
+                    const { lat, lon } = data[0];
+                    setMarkerPosition([lat, lon]);
+                } else {
+                    setError('Endereço não encontrado');
+                }
+            } catch (err) {
+                setError(err.message);
+            } finally {
+                setLoading(false);
             }
-            setLoading(false);
         };
 
         fetchCoordinates();
+
+        // Efeito de limpeza (cancelamento da requisição) pode ser adicionado aqui se necessário
     }, [address]);
 
     const customIconMarket = L.icon({
@@ -47,12 +61,14 @@ const MapComponent = ({ address }) => {
         <>
             {loading ? (
                 <p>Carregando o mapa...</p>
+            ) : error ? (
+                <p>{error}</p> // Exibe a mensagem de erro
             ) : (
                 <MapContainer center={markerPosition} zoom={13} style={{ 
-                    'border': '0',
-                    'width': '100%',
-                    'border-radius': '0 50px 0 0',
-                    'height': '408px' 
+                    border: '0',
+                    width: '100%',
+                    borderRadius: '0 50px 0 0',
+                    height: '408px' 
                 }}>
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
