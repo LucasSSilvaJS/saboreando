@@ -1,0 +1,57 @@
+.presentation{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.presentation-texts{
+    flex: 0 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.presentation-texts p{
+    flex: 0 0 auto;
+    font-family: Urbanist;
+    color: var(--cor--bg);
+    width: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.presentation-buttons button{
+    border: 0;
+    margin: 5px 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@keyframes nextText {
+    0% {
+        transform: translateX(0);
+    }
+    33.3% {
+        transform: translateX(-100%);
+    }
+    66.6% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}

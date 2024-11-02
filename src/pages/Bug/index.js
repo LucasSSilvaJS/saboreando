@@ -5,6 +5,7 @@ import InputText from "../../components/InputText";
 import TextArea from "../../components/TextArea";
 import './bug.css'
 import { postForm } from "../../services/crud";
+import { toast } from "react-toastify";
 
 function Bug() {
     const [nome, setNome] = useState('');
@@ -15,11 +16,11 @@ function Bug() {
     async function submeter(e) {
         e.preventDefault();
         if(nome === '' && email === '' && mensagem === '' && bug === ''){
-            alert('Preencha todos os campos');
+            toast.warn('Preencha todos os campos');
             return;
         }
         await postForm('bug', {nome,mensagem,email,bug});
-        alert('Bug enviado com sucesso!!')
+        toast.success('Bug enviado com sucesso!!')
     }
 
     return ( 

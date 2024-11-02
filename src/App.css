@@ -56,6 +56,12 @@ body{
   background-color: var(--cor--bg);
 }
 
+.container-bg-red{
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--cor--primaria);
+}
+
 .container-invite{
   max-width: 400px;
   margin: 0 auto;

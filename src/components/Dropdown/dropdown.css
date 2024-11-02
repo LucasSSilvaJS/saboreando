@@ -1,0 +1,11 @@
+.dropdown{
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+    height: 45px;
+    padding: 0 20px;
+    border: 2px solid var(--primary-red-700);
+    font-family: Urbanist;
+    background-color: var(--cor--input);
+    color: black;
+}

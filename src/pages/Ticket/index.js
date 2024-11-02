@@ -5,6 +5,7 @@ import InputText from "../../components/InputText";
 import TextArea from "../../components/TextArea";
 
 import {postForm} from '../../services/crud';
+import { toast } from "react-toastify";
 
 function Ticket() {
     const [nome, setNome] = useState('');
@@ -14,11 +15,11 @@ function Ticket() {
     async function submeter(e) {
         e.preventDefault();
         if(nome === '' && email === '' && mensagem === ''){
-            alert('Preencha todos os campos');
+            toast.warn('Preencha todos os campos');
             return;
         }
         await postForm('ticket', {nome,mensagem,email});
-        alert('Ticket enviado com sucesso!!')
+        toast.success('Ticket enviado com sucesso!!');
     }
 
     return ( 

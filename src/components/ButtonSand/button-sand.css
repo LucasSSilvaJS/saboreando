@@ -1,0 +1,21 @@
+.button-sand{
+    width: 100%;
+    border-radius: 12px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-color: var(--prymary-sand-400);
+    color: var(--primary-red-700);
+    font-family: Urbanist;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-sand:hover{
+    background-color: var(--prymary-sand-500);
+}
+.button-sand:active{
+    background-color: var(--prymary-sand-600);
+}
