@@ -8,12 +8,17 @@
     padding: 20px;
 }
 
-.perfil-options a{
+.perfil-option{
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 5px;
     color: var(--cor--erro);
+    cursor: pointer;
+}
+
+.perfil-option + .perfil-option{
+    margin-top: 15px;
 }
 
 .perfil-terms{

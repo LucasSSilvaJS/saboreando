@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Navbar from '../../components/Navbar';
-import { FaRegCircleQuestion } from 'react-icons/fa6';
+import { FaArrowRightFromBracket, FaRegCircleQuestion } from 'react-icons/fa6';
 
 import './perfil.css';
+
+import {logoutUser} from '../../services/crud';
 
 function Perfil() {
     return ( 
@@ -15,6 +17,10 @@ function Perfil() {
                         <FaRegCircleQuestion />
                         <span>Ajuda e suporte</span>
                     </Link>
+                    <div className='perfil-option' onClick={logoutUser}>
+                        <FaArrowRightFromBracket/>
+                        <span>Sair</span>
+                    </div>
                 </div>
                 <div className='perfil-terms'>
                     <Link to='/privacidade'>

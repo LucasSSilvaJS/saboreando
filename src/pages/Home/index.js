@@ -5,12 +5,11 @@ import CardCategories from "../../components/CardCategories";
 import banner from '../../assets/img/banner.png';
 import './home.css';
 import Navbar from "../../components/Navbar";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { selectAll, selectOne } from '../../services/crud';
 
 function Home() {
-    const navigate = useNavigate();
 
     const [categorias, setCategorias] = useState([])
     const [restaurante1, setRestaurante1] = useState({})
@@ -41,7 +40,7 @@ function Home() {
         <div className="default-container container-bg">
             <Header text='Home' style={{'position': 'absolute', 'left': '50%', 'transform': 'translateX(-50%)'}}/>
             <main>
-                <div className="banner-wrapper container" onClick={() => navigate('/conhecer')}>
+                <div className="banner-wrapper container">
                     <img className="banner" src={banner} alt="queremos conhecer você" />
                 </div>
                 <ContainerSection text='Restaurantes mais visitados'>
