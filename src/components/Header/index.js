@@ -10,8 +10,8 @@ function Header({text, navigation = false, to, style, ableCap = true}) {
 
                 <div className='header-info' style={{'flexDirection': navigation && 'row-reverse'}}>
                     <div className='brand-header'>
-                        <img className='brand-header-logo' src={logo} alt="Logo Sabor&ando"/>
-                        <span className='brand-header-name'>Sabor&ando</span>
+                        <img className='brand-header-logo' src={logo} alt="Logo Saboreando"/>
+                        <span className='brand-header-name'>Sabor&Ando</span>
                     </div>
 
                     {navigation ? (
