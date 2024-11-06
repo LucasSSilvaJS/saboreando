@@ -21,7 +21,7 @@ function Conhecer() {
     const [nome, setNome] = useState('');
     const [dataNascimento, setDataNascimento] = useState('');
 
-    const generos = ['Masculino', 'Feminino']
+    const generos = ['Masculino', 'Feminino', 'Não-binário', 'Outros', 'Prefiro não responder']
     const [genero, setGenero] = useState('');
     const handleSelectChangeGenero = (newValue) => {
         setGenero(newValue);

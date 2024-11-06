@@ -12,7 +12,7 @@ function Brand({disableAbsolute=false, style}) {
     return (
         <div className='brand' style={!disableAbsolute ? positionAbsolute : {style}}>
             <img className='brand-logo' src={logo} alt="Logo Sabor&ando" />
-            <h1 className='brand-name'>Sabor&ando</h1>
+            <h1 className='brand-name'>Sabor&Ando</h1>
         </div>
     );
 }
